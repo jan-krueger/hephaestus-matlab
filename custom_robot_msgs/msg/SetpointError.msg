@@ -1,0 +1,2 @@
+int32 setpoint_id
+geometry_msgs/Vector3 error
