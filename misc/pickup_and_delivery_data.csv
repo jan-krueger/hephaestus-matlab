@@ -1,0 +1,8 @@
+Failure,Pickup,LostTrack,2
+Failure,Pickup,Orientation,6
+Failure,Pickup,Missed,1
+Failure,Pickup,Not Atached,7
+Failure,Delivery,Lost Track,2
+Failure,Delivery,Missed,0
+Failure,Delivery,Not Detached,6
+Success,,,26

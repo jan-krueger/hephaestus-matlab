@@ -16,3 +16,11 @@ total = (full_success + first_station_lost_track + first_station_failed_landing_
     
 success_rate = full_success / total;
 partial_success_rate = (full_success + second_station_failed_block_delivery_not_detached) / total;
+
+f = figure('Position',[0 0 1280 720]);
+[patchhl, labelhl]=sunburstplot('misc/pickup_and_delivery_data.csv', {[1 0 0], [0 1 0]}, '', 3);
+title('Block Pickup and Delivery (n=50)');
+set(gcf, 'Color', 'none');
+
+export_fig('graphs/pickup_and_delivery.png',...
+    '-nocrop', '-transparent', '-png', '-m5');
