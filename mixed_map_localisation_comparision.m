@@ -44,6 +44,7 @@ for i = 1:length(time_table)
 end
 
 mean_error_tello = mean(errors);
+std_error_tello = std(errors);
 
 %% Tello Plot 1.0
 figure;
@@ -93,7 +94,7 @@ time_table_realsense = [
     7 ,  99, 104, 1.176, -1.0, 1.864;
     6 ,  83,  88, 1.526, -1.0, 1.864;
     
-    11, 244, 249, 0.126, -2.0, 1.864;
+    11, 187, 192, 0.126, -2.0, 1.864;
     12, 203, 208, 0.476, -2.0, 1.864;
     13, 217, 222, 0.826, -2.0, 1.864;
     14, 231, 236, 1.176, -2.0, 1.864;
@@ -115,6 +116,7 @@ for i = 1:length(time_table_realsense)
 end
 
 mean_error_realsense = mean(errors);
+std_error_realsense = std(errors);
 
 %% Realsense Plot 1.0
 figure;
